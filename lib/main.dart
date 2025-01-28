@@ -95,7 +95,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text(
+                                const Text(
                                   "Find your passion",
                                   style: TextStyle(
                                       color: Colors.white,
@@ -106,7 +106,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   height:
                                       MediaQuery.sizeOf(context).width * 0.035,
                                 ),
-                                Text(
+                                const Text(
                                   "Bring your idea to life means tranforming your creative vision into reality. it's about turning concepts into actionable plans and tangible outcomes",
                                   style: TextStyle(
                                       color: Colors.white,
@@ -114,7 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                       fontWeight: FontWeight.w500,
                                       height: 1.2),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 60,
                                 )
                               ],
@@ -132,7 +132,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             child: Container(
                               width: 85,
                               height: 85,
-                              padding: EdgeInsets.all(5),
+                              padding: const EdgeInsets.all(5),
                               decoration: BoxDecoration(
                                 color: Colors.transparent,
                                 border: Border.all(
@@ -140,12 +140,12 @@ class _MyHomePageState extends State<MyHomePage> {
                                   width: 2,
                                 ),
                                 borderRadius:
-                                    BorderRadius.all(Radius.circular(80)),
+                                    const BorderRadius.all(Radius.circular(80)),
                               ),
                               child: Container(
                                 width: 40,
                                 height: 40,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(60)),
                                     gradient: LinearGradient(
@@ -157,7 +157,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           ))
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 60,
                   ),
                   const Text(
@@ -195,7 +195,7 @@ class CutOut extends CustomClipper<Path> {
       ..arcToPoint(
         Offset(size.width - right, size.height),
         clockwise: true,
-        radius: Radius.circular(4),
+        radius: const Radius.circular(4),
       )
       ..lineTo(size.width, size.height)
       ..lineTo(size.width, 0.0)
