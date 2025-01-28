@@ -124,29 +124,35 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       Positioned(
                           bottom: -40,
-                          child: Container(
-                            width: 85,
-                            height: 85,
-                            padding: EdgeInsets.all(5),
-                            decoration: BoxDecoration(
-                              color: Colors.transparent,
-                              border: Border.all(
-                                color: Colors.pink,
-                                width: 2,
-                              ),
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(80)),
-                            ),
+                          child: GestureDetector(
+                            onTap: () {
+                              // Do something
+                              // TODO: Implement the action
+                            },
                             child: Container(
-                              width: 40,
-                              height: 40,
+                              width: 85,
+                              height: 85,
+                              padding: EdgeInsets.all(5),
                               decoration: BoxDecoration(
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(60)),
-                                  gradient: LinearGradient(
-                                      begin: Alignment.bottomLeft,
-                                      end: Alignment.topRight,
-                                      colors: [Colors.amber, Colors.green])),
+                                color: Colors.transparent,
+                                border: Border.all(
+                                  color: Colors.pink,
+                                  width: 2,
+                                ),
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(80)),
+                              ),
+                              child: Container(
+                                width: 40,
+                                height: 40,
+                                decoration: BoxDecoration(
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(60)),
+                                    gradient: LinearGradient(
+                                        begin: Alignment.bottomLeft,
+                                        end: Alignment.topRight,
+                                        colors: [Colors.amber, Colors.green])),
+                              ),
                             ),
                           ))
                     ],
