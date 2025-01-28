@@ -207,5 +207,5 @@ class CutOut extends CustomClipper<Path> {
   }
 
   @override
-  bool shouldReclip(CutOut prevCutout) => true;
+  bool shouldReclip(CutOut oldClipper) => true;
 }
