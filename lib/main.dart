@@ -174,6 +174,27 @@ class CutOut extends CustomClipper<Path> {
 
   @override
   Path getClip(Size size) {
+    /// The below code  is the cascade notation for this
+    // Path getClip(Size size) {
+    // Path path = Path();
+    // path.moveTo(0, size.height);
+    // path.lineTo((size.width - holeRadius) / 2 + size.width * 0.02, size.height);
+    // path.arcToPoint(
+    //   Offset(size.width - right, size.height),
+    //   clockwise: true,
+    //   radius: const Radius.circular(4),
+    // );
+    // path.lineTo(size.width, size.height);
+    // path.lineTo(size.width, 0.0);
+    // path.lineTo(0.0, 0.0);
+    // path.lineTo(0.0, size.height);
+    // path.close();
+
+    // return path;
+// }
+
+// here (below code) is the cascade notation for the above code
+
     final path = Path()
       ..moveTo(0, size.height)
       ..lineTo((size.width - holeRadius) / 2 + size.width * 0.02, size.height)
