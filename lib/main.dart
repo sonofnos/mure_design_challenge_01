@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+/// Bruhhhh, what are you looking for?
+/// The Codebase is shite and done under duress, but it gets the job done. lol.
+
 void main() {
   runApp(const MyApp());
 }
